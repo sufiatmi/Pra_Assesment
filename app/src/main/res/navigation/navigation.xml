@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigation"
+>
+
+    <fragment android:id="@+id/aboutFragment" android:name="org.d3if0027.myapplication.AboutFragment"
+              android:label="AboutFragment">
+        <action android:id="@+id/action_aboutFragment_to_pra_Assesment3" app:destination="@id/pra_Assesment3"/>
+    </fragment>
+    <fragment android:id="@+id/persegiPanjang" android:name="org.d3if0027.myapplication.PersegiPanjang"
+              android:label="fragment_persegi_panjang" tools:layout="@layout/fragment_persegi_panjang">
+        <action android:id="@+id/action_persegiPanjang_to_pra_Assesment3" app:destination="@id/pra_Assesment3"/>
+    </fragment>
+    <fragment android:id="@+id/segitiga_siku_siku" android:name="org.d3if0027.myapplication.Segitiga_siku_siku"
+              android:label="fragment_segitiga_siku_siku" tools:layout="@layout/fragment_segitiga_siku_siku">
+        <action android:id="@+id/action_segitiga_siku_siku_to_pra_Assesment3" app:destination="@id/pra_Assesment3"/>
+    </fragment>
+    <fragment android:id="@+id/pra_Assesment3" android:name="org.d3if0027.myapplication.Pra_Assesment"
+              android:label="fragment_pra__assesment" tools:layout="@layout/fragment_pra__assesment">
+        <action android:id="@+id/action_pra_Assesment3_to_persegiPanjang" app:destination="@id/persegiPanjang"/>
+        <action android:id="@+id/action_pra_Assesment3_to_segitiga_siku_siku" app:destination="@id/segitiga_siku_siku"/>
+        <action android:id="@+id/action_pra_Assesment3_to_aboutFragment" app:destination="@id/aboutFragment"/>
+    </fragment>
+</navigation>
